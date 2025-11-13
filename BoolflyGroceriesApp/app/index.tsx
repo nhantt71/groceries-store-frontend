@@ -32,7 +32,7 @@ const mockOffers: Offer[] = [
 export default function MainScreen() {
   const dispatch = useDispatch();
   const router = useRouter();
-  const [activeCategoryLocal, setActiveCategoryLocal] = useState<string>('Fruits');
+  const [activeCategoryLocal, setActiveCategoryLocal] = useState<string>('All');
   const [searchQuery, setSearchQueryLocal] = useState<string>('');
 
   // Fetch all products
@@ -57,7 +57,7 @@ export default function MainScreen() {
         unit: '1 kg',
         image: '🛒',
         color: ['#E9D5FF', '#FECACA', '#FEF08A', '#FEE2E2', '#FED7AA', '#BBF7D0', '#DCFCE7'][index % 7],
-        category: 'General',
+        category: 'All',
         rating: 4.0,
         likes: 0,
         inStock: true,
@@ -136,9 +136,9 @@ export default function MainScreen() {
   };
 
   // Filter products by active category (if category exists in product data)
-  const currentProducts: Product[] = products.filter((p) => 
-    !activeCategoryLocal || p.category === activeCategoryLocal || activeCategoryLocal === 'All'
-  ).slice(0, 8);
+  const currentProducts: Product[] = products
+    .filter((p) => activeCategoryLocal === 'All' || p.category === activeCategoryLocal)
+    .slice(0, 8);
 
 
 

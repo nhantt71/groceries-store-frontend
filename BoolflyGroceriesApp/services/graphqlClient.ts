@@ -1,4 +1,4 @@
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { ApolloClient, InMemoryCache, HttpLink, FetchPolicy } from '@apollo/client';
 
 // Create cache without deprecated options
 const cache = new InMemoryCache();
@@ -10,10 +10,10 @@ const client = new ApolloClient({
   cache,
   defaultOptions: {
     watchQuery: {
-      fetchPolicy: 'cache-and-network',
+      fetchPolicy: 'cache-and-network' as FetchPolicy,
     },
     query: {
-      fetchPolicy: 'cache-and-network',
+      fetchPolicy: 'cache-and-network' as FetchPolicy,
     },
   },
 });

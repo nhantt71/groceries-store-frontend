@@ -3,8 +3,8 @@ import { ProductState, Product } from '../../models/types';
 
 const initialState: ProductState = {
   products: [],
-  categories: ['Fruits', 'Vegetables', 'Breads', 'Other'],
-  activeCategory: 'Fruits',
+  categories: ['All', 'Fruits', 'Vegetables', 'Breads', 'Other'],
+  activeCategory: 'All',
   loading: false,
   error: null,
 };

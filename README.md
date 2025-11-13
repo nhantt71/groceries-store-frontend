@@ -19,9 +19,11 @@ An Expo + React Native mobile frontend for a Magento 2 groceries store. It integ
 
 ## Screenshots
 
-![Home](BoolflyGroceriesApp/assets/screenshots/home.png)
-![Cart](BoolflyGroceriesApp/assets/screenshots/cart.png)
-![Profile](BoolflyGroceriesApp/assets/screenshots/profile.png)
+<img width="175" height="382" alt="image" src="https://github.com/user-attachments/assets/0909b0a3-1e53-4faa-88b4-c5a7e85cc3cb" />
+
+<img width="181" height="386" alt="image" src="https://github.com/user-attachments/assets/455a2aad-68ba-48f5-b369-d2a895fda221" />
+
+<img width="186" height="363" alt="image" src="https://github.com/user-attachments/assets/26434327-ea38-43b9-ba8e-ee4ee843eed4" />
 
 
 ## Tech Stack
